@@ -1,1 +1,1 @@
-Quick - Chat Application
+server for Quick - Chat App
