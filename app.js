@@ -27,7 +27,7 @@ app.use('/chat', chatRouter);
 
 cron.schedule('*/14 * * * *', () => {
   console.log('Pinging server to keep it alive...');
-  https.get('https://quick-chat.onrender.com', (res) => {
+  https.get('https://quick-nodejs-mongodb-socket-io.onrender.com', (res) => {
     console.log(`Ping response: ${res.statusCode}`);
   }).on('error', (err) => {
     console.error('Ping error:', err.message);
